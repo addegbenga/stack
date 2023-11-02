@@ -41,3 +41,40 @@ export const metricData = [
     price: "0.00",
   },
 ];
+
+export const txdata = [
+  {
+    name: "Transaction",
+    income: true,
+  },
+  {
+    name: "Transaction",
+    income: false,
+  },
+  {
+    name: "Transaction",
+    income: false,
+  },
+  {
+    name: "Transaction",
+    income: false,
+  },
+  {
+    name: "Transaction",
+    income: false,
+  },
+  {
+    name: "Transaction",
+    income: false,
+  },
+];
+
+export const txTypeData = [
+  "Store Transactions",
+  "Get Tipped",
+  "Withdrawals",
+  "Chargebacks",
+  "Cashbacks",
+  "Refer & Earn",
+];
+export const txStatusData = ["Successful", "Pending", "Failed"];

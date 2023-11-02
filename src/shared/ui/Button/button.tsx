@@ -1,4 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
+import Link from "next/link";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 const button = cva(
@@ -6,12 +7,15 @@ const button = cva(
   {
     variants: {
       intent: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default:
+          "bg-primary fill-primary-foreground text-primary-foreground hover:bg-primary/90",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        selectDrop:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
@@ -19,15 +23,15 @@ const button = cva(
           "text-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {
-        default: "h-10 w-fit px-4 py-2",
-        sm: "h-9  px-3",
-        lg: "h-12 px-10",
+        default: "h-12 w-fit px-4 shrink-0 py-2",
+        sm: "h-10 w-fit shrink-0 px-4 ",
+        lg: "h-12 px-10 shrink-0",
         fluid: "group",
-        withIcon: "h-11 gap-1 group w-fit px-4",
+        withIcon: "h-11 gap-1 group shrink-0 px-4",
         withIconFull: "h-11 w-full justify-between px-4 gap-1",
       },
       shape: {
-        default: "h-10 rounded-md px-4 py-2",
+        default: "h-10 rounded-[10px] px-4 py-2",
         pill: "h-9 rounded-md px-3",
         round: "rounded-full",
       },
@@ -68,5 +72,34 @@ export function Button({
       {children && children}
       {props?.preset && props.preset}
     </button>
+  );
+}
+
+// Define a type for the props specific to the LinkButton component
+type LinkButtonProps = {
+  children?: ReactNode;
+  preset?: ReactNode;
+  suffet?: ReactNode;
+} & VariantProps<typeof button> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>;
+export function LinkButton({
+  className,
+  intent,
+  shape,
+  size,
+  children,
+  href = "#",
+  ...props
+}: LinkButtonProps): JSX.Element {
+  return (
+    <Link
+      href={href}
+      className={button({ intent, size, shape, className })}
+      {...props}
+    >
+      {props?.suffet && props.suffet}
+      {children && children}
+      {props?.preset && props.preset}
+    </Link>
   );
 }
