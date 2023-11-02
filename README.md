@@ -10,7 +10,7 @@ As part of this project, I have completed the following deliverables:
 
 ### 1. Hosted Web Application
 
-The web application has been deployed and is accessible through the following link: [Link to Hosted Web Application](#insert-link)
+The web application has been deployed and is accessible through the following link: [Link to Hosted Web Application](https://stack-orpin.vercel.app/)
 
 ### 2. Code Repository
 
