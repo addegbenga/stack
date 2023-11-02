@@ -4,7 +4,6 @@ type IconProps = {
   className?: string;
 };
 
-type ExtendedSVGProps = SVGProps<SVGSVGElement> & IconProps;
 export function ProductIcon({ className }: IconProps) {
   return (
     <svg
@@ -38,7 +37,7 @@ export function ProductIcon({ className }: IconProps) {
           y2="8.44539"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#870FFF" />
+          <stop stopColor="#870FFF" />
           <stop offset="1" stopColor="#E7CFFF" />
         </linearGradient>
         <linearGradient
@@ -97,7 +96,7 @@ export function ProductIcon2({ className }: IconProps) {
           y2="13.4112"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9868" />
+          <stop stopColor="#FF9868" />
           <stop offset="1" stopColor="#FF5403" />
         </linearGradient>
         <linearGradient
@@ -119,7 +118,7 @@ export function ProductIcon2({ className }: IconProps) {
           y2="6.8319"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCFF1C" />
+          <stop stopColor="#FCFF1C" />
           <stop offset="1" stopColor="#FF9D0A" />
         </linearGradient>
       </defs>
@@ -215,7 +214,7 @@ export function ProductIcon4({ className }: IconProps) {
           y2="13.8522"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCFF1C" />
+          <stop stopColor="#FCFF1C" />
           <stop offset="1" stopColor="#FF9D0A" />
         </linearGradient>
         <linearGradient
@@ -226,7 +225,7 @@ export function ProductIcon4({ className }: IconProps) {
           y2="12.8857"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFDDCD" />
+          <stop stopColor="#FFDDCD" />
           <stop offset="1" stopColor="#FF5403" />
         </linearGradient>
         <linearGradient
@@ -237,7 +236,7 @@ export function ProductIcon4({ className }: IconProps) {
           y2="11.7778"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E7CFFF" />
+          <stop stopColor="#E7CFFF" />
           <stop offset="1" stopColor="#870FFF" />
         </linearGradient>
       </defs>
