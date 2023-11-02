@@ -27,4 +27,4 @@ Here's a brief overview of how the project was completed:
 ## Conclusion
 
 I have thoroughly enjoyed working on this project, the tricky and interesting part was persisting filters and showing the count on the filter button, it was a fun task to work on.
-But overall hopefully i get to the next stage of this process LFG.
+But overall i am happy with this task and hopefully i get to the next stage of this process LFG.
