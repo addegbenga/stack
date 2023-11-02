@@ -24,13 +24,7 @@ Here's a brief overview of how the project was completed:
 
 - The application successfully retrieves data from the specified API endpoints and displays it as per the design provided in Figma.
 
-## Bonus Points
-
-While unit testing was not implemented in this project, I ensured that the application's functionality was thoroughly tested during development. Although unit tests were not written, the code was rigorously tested to ensure its reliability.
-
 ## Conclusion
 
 I have thoroughly enjoyed working on this project, the tricky and interesting part was persisting filters and showing the count on the filter button, it was a fun task to work on.
 But overall hopefully i get to the next stage of this process LFG.
-
-
